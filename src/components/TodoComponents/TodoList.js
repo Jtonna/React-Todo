@@ -13,8 +13,9 @@ class TodoList extends React.Component{
 		return(
 			<div>
 				todolist.js is here
-				{this.props.todos.map(todo =>(
-					<Todo />
+				{this.props.todos.map((todo) => (
+					<Todo todo={todo} />
+					// passes data to the "todo" component
 				))}
 			</div>
 		)

@@ -8,7 +8,7 @@ class Todo extends React.Component{
 	render(){
 		return(
 			<div>
-				todo.js is here
+				{this.props.todo.task}
 			</div>
 		)
 	}
