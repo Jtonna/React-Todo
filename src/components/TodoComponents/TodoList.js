@@ -1,19 +1,5 @@
 import React from 'react';
-import Todo from './Todo'
-
-const todos = [
-		{
-		  task: 'Organize Garage',
-		  id: 1528817077286,
-		  completed: false
-		},
-		{
-		  task: 'Bake Cookies',
-		  id: 1528817084358,
-		  completed: false
-		}
-];
-
+import Todo from './Todo';
 
 class TodoList extends React.Component{
 	constructor(){
@@ -21,10 +7,15 @@ class TodoList extends React.Component{
 	}
 
 	render(){
+
+		console.log(this.props)
+
 		return(
 			<div>
 				todolist.js is here
-				<Todo />
+				{this.props.todos.map(todo =>(
+					<Todo />
+				))}
 			</div>
 		)
 	}
