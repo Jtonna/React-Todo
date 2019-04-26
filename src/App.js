@@ -1,5 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
+// Todo List Imports todo.js
+import TodoForm from './components/TodoComponents/TodoForm';
 
 // this is my todo Array
 const ListOfThingsTodo =[
@@ -29,6 +31,7 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <TodoList />
+        <TodoForm />
       </div>
     );
   }
